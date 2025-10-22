@@ -67,20 +67,22 @@ figure.avatar img {
 
  /* Bio */
 
-  p{
-    font-weight: 400;
-  }  
+  
   section h2{
     max-width: 300px;
     padding:10px;
     border-left: 3px solid #2824f5;
     border-radius:8px;
     background: var(--backgr);
-    font-size:2vmin;
+    font-size:2.5vmin;
   }
   section h2:hover{
     border-left: 3px solid #f52424;
     transition: ease-in;
+  }
+  section p{
+    padding: 10px;
+    
   }
 
   /* font awesome styling */
@@ -126,5 +128,16 @@ figure.avatar img {
     nav.navbar{
         max-width: 90%;
         padding: 5px;
+    }
+    section h2{
+      font-size: 3vmin;
+    }
+    p{
+      padding: 10px;
+      font-size: 12px;
+    }
+    section ul{
+      padding: 10px;
+      font-size: 12px;
     }
  }

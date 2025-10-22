@@ -151,7 +151,6 @@
   @media(max-width: 768px){
        main[data-testid="test-contact-page"]{
         padding: 15px;
-        max-width: 80vw;
        }
        form{
         padding: 20px;
@@ -159,6 +158,8 @@
        .box{
         padding: 20px;
         max-width: 500px;
+        width: 100%;
+        box-sizing: border-box;
        }
        .box div{
         text-align: left;
