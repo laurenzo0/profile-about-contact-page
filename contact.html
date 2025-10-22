@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- contact.html -->
+     <main data-testid="test-contact-page">
+         <nav class="navbar">
+             <ul>
+                 <li>
+                 <a href="about.html"> About Me</a>
+                 </li>
+             </ul>
+             <a href="contact.html"><h2>CONTACT ME </h2></a>
+             <ul>
+                 <li>
+                 <a href="index.html">Lauren</a>
+                 </li>
+             </ul>
+          </nav>
+  <!-- <h1>Contact Us</h1> -->
+         <form id="contactForm" novalidate>
+  <!-- Full name -->
+             <div class="box">  
+                 <div>
+                     <label for="name">Full name</label>
+                     <input id="name" name="name" data-testid="test-contact-name" required />
+                     <p id="error-name" data-testid="test-contact-error-name" role="alert" aria-live="assertive" hidden></p>
+                 </div>
+
+   <!-- Email -->
+                 <div>
+                     <label for="email">Email</label>
+                     <input id="email" name="email" type="email" data-testid="test-contact-email" required aria-describedby="error-email" />
+                     <p id="error-email" data-testid="test-contact-error-email" role="alert" aria-live="assertive" hidden></p>
+                 </div>
+
+    <!-- Subject -->
+                 <div>
+                     <label for="subject">Subject</label>
+                     <input id="subject" name="subject" data-testid="test-contact-subject" required />
+                     <p id="error-subject" data-testid="test-contact-error-subject" role="alert" aria-live="assertive" hidden></p>
+                 </div>
+
+    <!-- Message -->
+                 <div class="message">
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message" rows="6" data-testid="test-contact-message" placeholder="leave a message" required aria-describedby="error-message"></textarea>
+                     <p id="error-message" data-testid="test-contact-error-message" role="alert" aria-live="assertive" hidden></p>
+                 </div>
+
+                 </div>
+
+                 <div class="btn">
+                 <button type="submit" data-testid="test-contact-submit">Send Message</button>
+                 </div>
+
+                 <p id="success" data-testid="test-contact-success" role="status" aria-live="polite" hidden>Thanks — your message was sent!</p>
+                
+         </form>
+     </main>
+     <script src="contact.js"></script>
+</body>
+</html>

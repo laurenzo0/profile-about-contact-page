@@ -1,0 +1,130 @@
+  :root{
+    --card-bg: #eeeeee;
+    --accent: #277eff;
+    --muted: #3a3a3aa9;
+    --backgr: #87878865;
+    --hover: #575555e7;
+    --about-bg: linear-gradient(245.59deg, #077180d8 0%, #1335cad0 38.53%, #15b0b693  75.52%);
+    --radius: 12px;
+    --gap: 15px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }    
+     main[data-testid="test-about-page"]{
+    background: var(--card-bg);
+    border-left: 5px solid #2824f5;
+    border-radius: var(--radius);
+    padding: 5px;
+    box-shadow: 0 5px 20px rgba(6, 10, 20, 0.301);
+    max-width: 90vw;
+    display: grid;
+    color: #000000;
+    margin: 20px auto;
+    align-items: start;
+    } 
+      nav.navbar{
+    max-width: 100%;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius);
+    border-bottom: 2px solid #f52424;
+    justify-content: space-between;
+     }
+     .navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.5vmin;
+    color: #000000;
+     }
+     .navbar a:hover{
+        color: var(--hover);
+        transition: ease-in;
+     }
+     .navbar ul li{
+    list-style: none;
+     }
+     
+ .card-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);  
+  }
+
+figure.avatar img {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 14px;
+    object-fit: cover;
+    display:block;
+  }
+  /* .bio-box{
+    padding: 10px;
+    background: var(--accent);
+    border-radius: var(--radius);
+    color: #fff;
+  } */
+
+ /* Bio */
+
+  p{
+    font-weight: 400;
+  }  
+  section h2{
+    max-width: 300px;
+    padding:10px;
+    border-left: 3px solid #2824f5;
+    border-radius:8px;
+    background: var(--backgr);
+    font-size:2vmin;
+  }
+  section h2:hover{
+    border-left: 3px solid #f52424;
+    transition: ease-in;
+  }
+
+  /* font awesome styling */
+  .fa-solid.fa-user{
+    color: #1e3e6b;
+    font-size: 2.5vmin;
+  }
+  .fa-solid.fa-meteor{
+    color: #9c0000;
+    font-size: 2.5vmin;
+  }
+  .fa-solid.fa-pen-to-square{
+    color: #a39301;
+    font-size: 2.5vmin;
+  }
+  .fa-solid.fa-comment-dots{
+    color: #e4dada;
+    font-size: 2.5vmin;
+  }
+
+ /* responsiveness */
+
+  @media(max-width: 768px){
+
+     main div{
+    padding: 15px;
+  }
+
+     figure.avatar{
+      align-items: start;
+    }
+    figure.avatar img{
+      width: 300px;
+      min-height: 300px;
+    }
+
+    .card-inner{
+        max-width: 500px;
+      display: grid;
+      gap: var(--gap);
+      padding: 5px;
+    }
+    nav.navbar{
+        max-width: 90%;
+        padding: 5px;
+    }
+ }

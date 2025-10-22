@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Card</title>
+</head>
+<body>
+
+    <article data-testid="test-profile-card" aria-labelledby="profile-name">
+       <nav class="navbar" data-testid="test-user-name">
+            <ul>
+              <li>
+                <a href="about.html"> About Me</a>
+              </li>
+            </ul>
+            <a href="index.html"><h2>LAUREN</h2></a>
+            <ul>
+              <li>
+                <a href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="card-inner">
+            <figure class="avatar" aria-hidden="false">
+                <img 
+                src="img/lauren.jpg"
+                 alt="potrait of lauren"
+                 data-testid="test-user-avatar"
+                 id="avatar-img"
+                />
+            </figure>
+
+            <div style="flex:1; min-width:0;">
+      <header class="user-meta">
+        <h2 id="profile-name" data-testid="test-user-name" aria-label="User full name">Lauren N. Uzochukwu (Laurel)</h2>
+        <div class="role"> Software Developer — JavaScript & PHP</div>
+      </header>
+
+      <main>
+        <p data-testid="test-user-bio">
+          Software developer focused on building scalable web apps and elegant user experiences.
+          <br>Loves exploring, writing clean code, and learning new front-end patterns.
+        </p>
+
+        <div class="time" aria-live="polite">
+          Now (ms): <span id="now-ms" data-testid="test-user-time"></span>
+        </div>
+
+        <figcaption class="sr-only" id="avatar-caption">Contact Me</figcaption>
+
+        <nav class="social-links" data-testid="test-user-social-links" aria-label="Social links">
+          <a href="https://github.com/laurenzo0" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+            <i class="fa-brands fa-github" data-testid="test-user-social-github"></i></a>
+          <a href="https://www.linkedin.com/in/lauren-uzochukwu-b63341230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+            <i class="fa-brands fa-linkedin" data-testid="test-user-social-linkedin"></i></a>
+          <a href="https://x.com/laurenoftheleaf?s=11" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+            <i class="fa-brands fa-twitter" data-testid="test-user-social-twitter"></i></a>
+        </nav>
+
+        <div class="lists" style="margin-top:12px;">
+          <section aria-labelledby="hobbies-heading">
+            <h3 id="hobbies-heading">Hobbies <i class="fa-solid fa-thumbs-up"></i></h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Reading books & blogs</li>
+              <li>Drawing</li>
+              <li>Gaming</li>
+              <li>Taking walks</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="dislikes-heading">
+            <h3 id="dislikes-heading">Dislikes <i class="fa-solid fa-thumbs-down"></i></h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Procastination</li>
+              <li>Untidy spaces</li>
+              <li>Tardiness</li>
+              <li>Poor accessibility</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+        </div>
+    </article>
+    
+    <script src="main.js"></script>
+</body>
+</html>
